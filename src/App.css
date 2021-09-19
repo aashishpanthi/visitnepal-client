@@ -1,0 +1,229 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+:root{
+    --primary: #fff;
+    --head: #DC143C;
+    --font: #003893;
+    --ternary: rgb(7, 7, 7);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    
+}
+.container{
+    min-height: 100vh;
+    display: flex;
+    overflow: hidden;
+}
+.flex{
+    display: flex;
+}
+.center{
+    align-items: center;
+    justify-content: center;
+}
+.column{
+    flex-direction: column; 
+}
+.space-around{
+    justify-content: space-around;
+}
+.middle{
+    justify-content: center;
+}
+.info{
+    height: 70vh;
+    width: 45vw;
+    margin-top: 5rem;
+}
+
+.info h1{
+    font-family: 'Oswald', sans-serif;
+    font-size: 4rem;
+    margin-top: 2rem;
+}
+.info-txt{
+    font-family: 'Roboto',sans-serif;
+    font-size: 1.5rem;
+    font-weight: 150; 
+    margin-top: 4rem;
+}
+.sources{
+    margin-top: 3rem;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 1000;
+}
+a{
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.info-box{
+    height: 10vh;
+    width: 100vw;
+}
+.info-bar{
+    height: 3rem;
+    width: 10rem;
+    border: 1px solid black;
+}
+.info-text{
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-left: 1rem;
+}
+.info-text1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+.headings{
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 1.5rem;
+}
+.box-heading{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+}
+.destination-container{
+    margin-top: 2rem;
+    width: 100vw;
+    min-height: 77vh;
+}
+.destination-box{
+    height: 70vh;
+    width: 25vw;
+    padding: 10px;
+    margin-top: 1rem;
+    box-shadow: -3px -3px 7px #706c6c73, 3px 3px 7px rgba(80, 82, 87, 0.288);
+
+}
+.info-img{
+    height: 30vh;
+    width: 100%;
+}
+.destination-box p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.3rem;
+    font-weight: lighter;
+}
+.btn{
+    font-size: 1.3rem;
+    width: auto;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    background-color: var(--head);
+    color: var(--primary);
+    cursor: pointer;
+}
+.accomodation-img{
+    height: 40vh;
+    width: 30%;
+}
+.accomodation-container{
+    margin-top: 1.5rem;
+    height: 50vh;
+    width: 100vw;
+}
+.accomodation-box{
+    width: 60%;
+}
+.accomodation-container h3{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.accomodation-container p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.accomodation-btn{
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    width: 10vw;
+    padding: 7px 10px;
+    border-radius: 5px;
+    font-family: 'Roboto',sans-serif;
+    font-weight: 400;
+    background-color: var(--font);
+    color: var(--primary);
+    cursor: pointer;
+    
+}
+.bottom-box{
+    width: 70vw;
+    margin: 0 auto;
+}
+.bottom-box h1{
+    position: relative;
+}
+.bottom-box h1::after{
+    content: "";
+    display: block;
+    width: 8vw;
+    height: 2px;
+    border: 1px solid var(--head);
+    background-color: var(--head);
+    position: absolute;
+    bottom: 0%;
+}
+.medias{
+    height: 40vh;
+    width: 100vw;
+    border-bottom: 1px solid #0038938c;
+}
+.link1{
+    font-family: 'Roboto' , sans-serif;
+    font-size: 1rem;
+    color: var(--font);
+}
+.btn3{
+    background-color: var(--font);
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 8px;
+}
+.top{
+    margin-top: 1rem;
+}
+.social img{
+    height: 8vh;
+    width: 10vh;
+    margin-top: 1rem;
+    margin-left: 4px;
+}
+.footer{
+    height: 10vh;
+}
+.footer-heading{
+    font-family: 'Roboto', sans-serif;
+    color: var(--head);
+    font-size: 1.5rem;
+}
+.link-box{
+    width: 45vw;
+}
+@media(max-width:998px){
+    html{
+        font-size: 65%;
+    }
+}
+@media(max-width:998px){
+    html{
+        font-size: 60%;
+    }
+}
+
