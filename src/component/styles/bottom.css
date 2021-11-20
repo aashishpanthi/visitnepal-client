@@ -1,0 +1,122 @@
+.bottom-box{
+    width: 90%;
+    margin: 0 auto;
+    max-width: 900px;
+    text-align: center;
+}
+.bottom-box h1{
+    position: relative;
+    margin: 1rem 0;
+    font-size: 3rem;
+}
+.bottom-box h1::after{
+    content: "";
+    display: block;
+    width: 150px;
+    height: 2px;
+    border: 1px solid var(--head);
+    background-color: var(--head);
+    position: absolute;
+    top: 100%;
+}
+
+.bottom-box .about-nepal{
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+    font-family: "Roboto",sans-serif;
+    font-weight: normal;
+}
+
+.bottom-box .learn-more-btn{
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: var(--font);
+    color: var(--primary);
+    text-decoration: none;
+}
+
+.bottom-box .learn-more-btn i{
+    transition: .2s ease;
+}
+
+
+.bottom-box .learn-more-btn:hover i{
+    transform: translateX(5px);
+}
+
+.medias{
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+}
+.medias .links{
+    font-family: 'Roboto' , sans-serif;
+}
+
+.medias .links a{
+    font-size: 1rem;
+    color: var(--font);
+    text-decoration: none;
+    display: block;
+}
+
+.subscribe h1{
+    font-size: 1.8rem;
+}
+
+.subscribe .input-wrap{
+    height:40px;
+    width:400px;
+    box-shadow:0px 0px 3px royalblue;
+    display:flex;
+    overflow: hidden;
+    border-radius: 5px;
+    margin: 0.5rem auto;
+}
+
+.subscribe .input-wrap input{
+    height: 100%;
+    padding: 5px 10px;
+    outline:none;
+    border:none;
+    flex:1;
+}
+
+.subscribe button{
+    background-color: var(--font);
+    color: var(--primary);
+    cursor: pointer;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 1rem;
+    border: none;
+}
+
+.social svg{
+    font-size: 40px;
+    margin: 5px;
+}
+
+.social svg:hover{
+    color: red;
+}
+
+.copyright{
+    display: flex;
+    background-color: #eee;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+.copyright span{
+    font-family: 'Roboto', sans-serif;
+    color: var(--head);
+    font-size: 1rem;
+}
+
+.link-box a{
+    text-decoration: none;
+    margin:0px 5px;
+}

@@ -1,0 +1,109 @@
+:root {
+  --dur: 0.3s;
+  --color-dark: #57bd84;
+  --font-fam: "Lato", sans-serif;
+  --btn-width: 6rem;
+  --bez: cubic-bezier(0, 0, 0.43, 1.49);
+  --rad: 10px;
+  --height:60px;
+}
+
+section.home {
+  height: 100vh;
+  background: url("../../images/himalayas.jpg") no-repeat;
+  background-size: cover;
+}
+
+.home-title {
+  color: var(--head);
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: royalblue;
+  font-size: 4rem;
+}
+
+.fa-search {
+  color: var(--primary);
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+
+section.home form {
+  position: relative;
+  width: 90%;
+  max-width: 750px;
+  background: var(--primary);
+  border-radius: var(--rad);
+  margin-top: 1rem;
+}
+
+section.home input,
+.searchIcon {
+  height: var(--height);
+  font-family: var(--font-fam);
+  border: none;
+  color: var(--font);
+  font-size: 1.8rem;
+}
+
+section.home input[type="search"] {
+  outline: none;
+  width: 100%;
+  background: var(--primary);
+  padding: 0 20px;
+  border-radius: var(--rad);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: all var(--dur) var(--bez);
+  transition-property: width, border-radius;
+  z-index: 1;
+  position: relative;
+}
+
+section.home button {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: var(--btn-width);
+  font-weight: bold;
+  background: var(--color-dark);
+  border-radius: 0 var(--rad) var(--rad) 0;
+}
+
+section.home input:not(:-moz-placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+section.home input:not(:-ms-input-placeholder) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+
+section.home input:not(:placeholder-shown) {
+  border-radius: var(--rad) 0 0 var(--rad);
+  width: calc(100% - var(--btn-width));
+}
+section.home input:not(:-moz-placeholder-shown) + button {
+  display: block;
+}
+section.home input:not(:-ms-input-placeholder) + button {
+  display: block;
+}
+section.home input:not(:placeholder-shown) + button {
+  display: block;
+}
+
+section.home label {
+  position: absolute;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}

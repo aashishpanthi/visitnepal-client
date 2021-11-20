@@ -1,0 +1,31 @@
+.accomodation-img{
+    height: 40vh;
+    width: 30%;
+}
+.accomodation-container{
+    margin-top: 1.5rem;
+    height: 50vh;
+    width: 100vw;
+}
+.accomodation-box{
+    width: 60%;
+}
+.accomodation-container h3{
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+}
+.accomodation-container p{
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+}
+.accomodation-btn{
+    font-size: 1rem;
+    padding: 10px 25px;
+    border-radius: 5px;
+    background-color: var(--font);
+    color: var(--primary);
+    cursor: pointer;   
+}
