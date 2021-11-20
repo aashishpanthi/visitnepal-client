@@ -1,8 +1,8 @@
 import React from 'react';
 import "aos/dist/aos.css";
 import Aos from "aos";
-import Nepal from "./Nepal.svg";
-import "./intro.css"
+import Nepal from "../images/Nepal.svg";
+import "./styles/intro.css"
 export default function Intro() {
     Aos.init({ duration: 2000 });
     return (

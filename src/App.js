@@ -6,7 +6,7 @@ import Accomodation from "./compoent/Accomodation.js";
 import Experience from "./compoent/Experience.js";
 import Blog from "./compoent/Blog.js";
 import Intro from "./compoent/Intro.js";
-import "./compoent/navbar.css";
+import "./compoent/styles/navbar.css";
 import Bottom from "./compoent/bottom.js"
 import "./App.css"
 function App() {

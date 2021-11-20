@@ -1,9 +1,9 @@
 import React from 'react'
-import "./destination.css"
+import "./styles/destination.css"
 import Aos from "aos";
-import Kathmandu from "./KATHMANDU.jpg"
-import Lumbini from "./LUMBINI.jpg"
-import Pokhara from "./POKHARA.jpg"
+import Kathmandu from "../images/KATHMANDU.jpg"
+import Lumbini from "../images/LUMBINI.jpg"
+import Pokhara from "../images/POKHARA.jpg"
 
 export default function Destinations() {
     Aos.init({duration: 1000});

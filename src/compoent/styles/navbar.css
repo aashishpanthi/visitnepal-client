@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
 .bar{   
-    height: 10vh;
-    width: 100vw;
+    height: 70px;
+    width: 100%;
     background-color: var(--primary);
     display: flex;
     justify-content: space-between;
@@ -33,7 +34,7 @@
     height: 10vh;
     width: 100vw;
     position: absolute;
-    background-image: url('shadow.svg');
+    background-image: url('../../images/shadow.svg');
     background-repeat: no-repeat;
     background-position: center;
     bottom: 87%;

@@ -1,8 +1,8 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import Insta from "./insta.png"
-import Fb from "./FB.png"
-import Yt from "./yt.png"
+import Insta from "../images/insta.png"
+import Fb from "../images/FB.png"
+import Yt from "../images/yt.png"
 export default function Bottom() {
     return (
         <div className="container flex column">

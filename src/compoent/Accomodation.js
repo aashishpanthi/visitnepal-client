@@ -1,6 +1,6 @@
 import React from 'react'
-import Stay from "./Stay.jpg";
-import Mountain from "./mountain.jpg"
+import Stay from "../images/Stay.jpg";
+import Mountain from "../images/mountain.jpg"
 export default function Accomodation() {
     return (
         <div className="container flex column">

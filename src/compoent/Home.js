@@ -1,7 +1,7 @@
 import React from 'react'
 import "aos/dist/aos.css";
 import Aos from "aos";
-import "./home.css"
+import "./styles/home.css"
 export default function Home() {
         Aos.init({duration: 1000});
     return (
