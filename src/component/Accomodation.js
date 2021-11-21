@@ -11,7 +11,7 @@ export default function Accomodation() {
           <img src={Stay} alt="stay" className="accomodation-img"/>
         </div>
         <div className="accomodation-box">
-          <h3 className="headings">Stay how you live</h3>
+          <h3 className="headings">Stay how you like</h3>
           <p>
             We provide you the hotels that best fits for you. We help you to
             filter out your best choice out of many confusions.

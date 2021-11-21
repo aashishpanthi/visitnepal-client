@@ -9,24 +9,76 @@ nav {
   z-index: 1;
   position: absolute;
   top: 0;
+  padding: 0 2rem;
 }
 
 .logo {
-  margin-left: 2rem;
   font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--primary);
 }
+
 .link {
   color: var(--primary);
   padding: 0 10px;
-  margin: 0 10px;
+  margin: 0 5px;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
   text-decoration: none;
+  transition: .3s ease-in-out;
 }
 
 .link:hover {
   opacity: 0.9;
+}
+
+.link-border{
+  padding: 5px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 25px;
+}
+
+.link-border:hover{
+  color: royalblue;
+  background-color: var(--primary);
+}
+
+nav .MuiSvgIcon-root{
+  color: var(--primary);
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 99;
+  display: none;
+}
+
+@media screen and (max-width:800px) {
+  nav .MuiSvgIcon-root{
+    display: block;
+  }
+  
+  nav .list{
+    background-color: var(--color-dark);
+    padding: 3rem 5rem 1rem 1rem;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: scaleY(0);
+    transition: 50ms ease-in-out;
+  }
+
+  nav .list a{
+    display: block;
+    margin:.5rem 0;
+  }
+
+  nav .list.active{
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+
+  nav .list .link-border{
+    border: none;
+    padding: 0 10px;
+  }
 }

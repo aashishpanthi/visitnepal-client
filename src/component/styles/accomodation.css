@@ -10,12 +10,24 @@ section.accomodation{
     margin: 1rem auto;
 }
 
+@media screen and (max-width:700px) {
+    .accomodation-container{
+        flex-direction: column;
+        max-width: 400px;
+    }
+
+    .accomodation-container:nth-child(2){
+        flex-direction: column-reverse;
+    }
+}
+
 .image-container-accomodation{
     min-width: 400px;
     max-width: 400px;
     height: 250px;
     overflow: hidden;
 }
+
 
 .accomodation-img{
     min-height: 100%;
@@ -49,4 +61,21 @@ section.accomodation{
     cursor: pointer; 
     margin-top: 1rem;  
     border: none;
+}
+
+@media screen and (max-width:500px) {
+    .image-container-accomodation{
+        min-width: 95%;
+        max-width: 400px;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .accomodation-container h3{
+        font-size: 2rem;
+    }
+
+    .accomodation-container p{
+        margin-top: 0;
+    }
 }

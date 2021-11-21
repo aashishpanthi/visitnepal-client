@@ -6,6 +6,7 @@
   --bez: cubic-bezier(0, 0, 0.43, 1.49);
   --rad: 10px;
   --height:60px;
+  --fontSize: 1.8rem;
 }
 
 section.home {
@@ -19,7 +20,7 @@ section.home {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: royalblue;
+  -webkit-text-stroke-color: var(--primary);
   font-size: 4rem;
 }
 
@@ -27,6 +28,24 @@ section.home {
   color: var(--primary);
   font-size: 1.4rem;
   cursor: pointer;
+}
+
+@media screen and (max-width:800px) {
+  .home-title{
+    font-size: 3rem;
+  }
+
+  :root{
+    --height:50px;
+    --fontSize: 1.5rem;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .home-title{
+    font-size: 2.5rem;
+    text-align: center;
+  }
 }
 
 
@@ -45,7 +64,7 @@ section.home input,
   font-family: var(--font-fam);
   border: none;
   color: var(--font);
-  font-size: 1.8rem;
+  font-size: var(--fontSize);
 }
 
 section.home input[type="search"] {

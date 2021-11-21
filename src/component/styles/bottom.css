@@ -12,7 +12,7 @@
 .bottom-box h1::after{
     content: "";
     display: block;
-    width: 150px;
+    width: 125px;
     height: 2px;
     border: 1px solid var(--head);
     background-color: var(--head);
@@ -51,6 +51,28 @@
     display: flex;
     justify-content: space-between;
 }
+
+@media screen and (max-width:800px) {
+    .medias{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .subscribe{
+        margin:.5rem 0;
+    }
+
+    .medias .links{
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+
+    .medias .links a{
+        margin:5px;
+    }
+}
+
 .medias .links{
     font-family: 'Roboto' , sans-serif;
 }
@@ -68,7 +90,8 @@
 
 .subscribe .input-wrap{
     height:40px;
-    width:400px;
+    max-width:400px;
+    width: 100%;
     box-shadow:0px 0px 3px royalblue;
     display:flex;
     overflow: hidden;
@@ -118,5 +141,45 @@
 
 .link-box a{
     text-decoration: none;
-    margin:0px 5px;
+    margin:0px 7px;
+}
+
+@media screen and (max-width:500px) {
+    .bottom-box h1{
+        font-size: 2.2rem;
+    }
+
+    .bottom-box .about-nepal{
+        font-size: 1rem;
+    }
+
+    .bottom-box h1::after{
+        width: 100px;
+    }
+
+    .medias{
+        text-align: left;
+    }
+
+    .subscribe{
+        margin:.5rem 0;
+    }
+
+    .medias .links{
+        flex-direction: column;
+    }
+
+    .medias .links a{
+        margin:0;
+    }
+
+    .subscribe h1{
+        font-size: 1.75rem;
+        line-height: 1.75rem;
+    }
+
+    .copyright{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
 }

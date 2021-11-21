@@ -14,6 +14,7 @@
 .intro-section img{
     max-height: 400px;
     max-width: 500px;
+    width:90%;
 }
 
 .intro-section .info{
@@ -42,11 +43,13 @@
 .info-box-container{
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .info-bar{
     border: 2px solid black;
     padding: 5px 0px 5px 10px;
     width: 200px;
+    margin:10px;
     font-weight: bold;
     font-family: 'Oswald', sans-serif;
 }
@@ -59,4 +62,24 @@
 .info-text1{
     font-size: 1.2rem;
     font-weight:900;
+}
+
+@media screen and (max-width:900px) {
+    .main-info{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    .info-txt{
+        font-size:1rem;
+    }
+
+    .info h1{
+        font-size: 3rem;
+    }
+
+    .info-bar{
+        width: 100%;
+    }
 }
