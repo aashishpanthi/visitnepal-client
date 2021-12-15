@@ -1,0 +1,119 @@
+.place {
+  --primary: #003893;
+}
+
+.placeDetails {
+  padding: 1rem;
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+  font-family: "Roboto";
+}
+
+.placeDetails__interact {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.placeDetails__interact .name {
+  font-size: 2rem;
+}
+
+.placeDetails__interact .column2 {
+  display: flex;
+}
+
+.placeDetails__interact button {
+  padding: 5px 15px;
+  border: 1px solid var(--primary);
+  border-radius: 25px;
+  cursor: pointer;
+  background: transparent;
+  color: var(--primary);
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+.placeDetails__interact button .MuiSvgIcon-root {
+  font-size: 1rem;
+  padding-left: 2px;
+}
+
+.placeDetails__visualInfo {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+
+.placeDetails__visualInfo .imageContainer {
+  max-width: 620px;
+  max-height: 400px;
+  width: 100%;
+  overflow: hidden;
+  margin: 5px;
+}
+
+.placeDetails__visualInfo .imageContainer img {
+  width: 100%;
+}
+
+@media screen and (max-width: 900px) {
+  .placeDetails__visualInfo .imageContainer img {
+    height: 100%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .placeDetails__interact {
+    display: block;
+  }
+
+  .placeDetails__visualInfo {
+    flex-direction: column;
+  }
+
+  .placeDetails__visualInfo .imageContainer img {
+    height: auto;
+    width: 100%;
+  }
+
+  .placeDetails__visualInfo .physicalDetails .map {
+    width: 100%;
+  }
+
+  .placeDetails__interact .column2 {
+    justify-content: right;
+  }
+}
+
+.placeDetails__visualInfo .physicalDetails {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 3px #003893);
+  margin: 5px;
+}
+
+.placeDetails__visualInfo .physicalDetails .map {
+  margin: 10px 0;
+}
+
+.placeDetails__visualInfo .physicalDetails p {
+  margin-top: 2px;
+}
+
+.placeDetails__moreInformation {
+  margin: 1rem 0;
+}
+
+.placeDetails__moreInformation p {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}

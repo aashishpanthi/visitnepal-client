@@ -3,9 +3,12 @@ import Home from "./component/Home.js";
 import Destinations from "./component/Destinations.js";
 import Accomodation from "./component/Accomodation.js";
 import Experience from "./component/Experience.js";
+import Place from "./pages/place/Place.js";
 import Blog from "./component/Blog.js";
 import "./component/styles/navbar.css";
+import Login from "./pages/Login";
 import "./App.css";
+
 function App() {
   return (
     <div className="App">
@@ -16,6 +19,8 @@ function App() {
           <Route path="/accomodation" component={Accomodation}></Route>
           <Route path="/experiences" component={Experience}></Route>
           <Route path="/blog" component={Blog}></Route>
+          <Route path="/login" component={Login}></Route>
+          <Route path="/place/lumbini" component={Place}></Route>
         </Switch>
       </BrowserRouter>
     </div>

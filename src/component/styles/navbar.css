@@ -53,6 +53,11 @@ nav .MuiSvgIcon-root{
 }
 
 @media screen and (max-width:800px) {
+
+  nav{
+    padding: 0 1rem;
+  }
+
   nav .MuiSvgIcon-root{
     display: block;
   }
