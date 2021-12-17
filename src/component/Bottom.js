@@ -24,10 +24,10 @@ const Bottom = () => {
 
       <div className="medias">
         <div className="links">
-          <Link to="/">Festivals</Link>
-          <Link to="/">Foods and drinks</Link>
-          <Link to="/">Wildlife and nature</Link>
-          <Link to="/">Historical places</Link>
+          <Link to="/festivals">Festivals</Link>
+          <Link to="/foods-and-drinks">Foods and drinks</Link>
+          <Link to="/wildlife-and-nature">Wildlife and nature</Link>
+          <Link to="/historical-places">Historical places</Link>
         </div>
 
         <div className="subscribe">
@@ -54,9 +54,9 @@ const Bottom = () => {
       <div className="copyright">
         <span>&copy; All rights reserved by visitnepal, 2021</span>
         <div className="link-box">
-          <Link to="/">About us</Link>
-          <Link to="/">Emergency numbers</Link>
-          <Link to="/">Contact us</Link>
+          <Link to="/about-us">About us</Link>
+          <Link to="/emergency-numbers">Emergency numbers</Link>
+          <a href="mailto:aashishpanthi11@gmail.com">Contact us</a>
         </div>
       </div>
     </footer>

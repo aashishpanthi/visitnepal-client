@@ -9,6 +9,7 @@ import "./component/styles/navbar.css";
 import Login from "./pages/Login";
 import "./App.css";
 import NotFound from "./pages/NotFound.js";
+import Festivals from "./pages/Festivals.js";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/blog" component={Blog} exact></Route>
           <Route path="/login" component={Login} exact></Route>
           <Route path="/place/:name" component={Place}></Route>
+          <Route path="/festivals" component={Festivals}></Route>
           <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
