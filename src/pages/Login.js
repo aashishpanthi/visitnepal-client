@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
   Button,
   TextField,
@@ -6,14 +7,26 @@ import {
   AppBar,
   Typography,
   Toolbar,
+  FormHelperText
 } from "@material-ui/core";
 import { Link } from "react-router-dom";
 import "./styles/Login.css";
 
 const Login = () => {
-  const responseGoogle = (response) => {
-    console.log(response);
-  };
+  const [email, setEmail] = useState("");
+  const [pass, setPass] = useState("");
+  const [error, setError] = useState("");
+
+  const handleSubmit = (e) =>{
+    e.preventDefault();
+
+    if(!email || !pass){
+      setError("All fields are required");
+    }
+    // else if(email !== "aashishpanthi11@gmail.com"){
+    //   setError("You are wrong")
+    // }
+  }
 
   const BRAND_NAME = "Visitnepal";
 
@@ -23,7 +36,9 @@ const Login = () => {
         <Toolbar>
           <Grid container justify="center" wrap="wrap">
             <Grid item>
+              <Link to="/" className="brand_name">
               <Typography variant="h6">{BRAND_NAME}</Typography>
+              </Link>
             </Grid>
           </Grid>
         </Toolbar>
@@ -47,7 +62,7 @@ const Login = () => {
                 </Typography>
               </Grid>
               <Grid item>
-                <form>
+                <form onSubmit={handleSubmit}>
                   <Grid container direction="column" spacing={2}>
                     <Grid item>
                       <TextField
@@ -59,6 +74,8 @@ const Login = () => {
                         autoComplete="email"
                         variant="outlined"
                         autoFocus
+                        value={email}
+                        onChange={(e) => setEmail(e.target.value)}
                       />
                     </Grid>
                     <Grid item>
@@ -70,8 +87,18 @@ const Login = () => {
                         type="password"
                         variant="outlined"
                         autoComplete="current-password"
+                        value={pass}
+                        onChange={(e) => setPass(e.target.value)}
                       />
                     </Grid>
+
+                    {error && (
+                      <Grid item>
+                      <FormHelperText>{error}</FormHelperText>
+                    </Grid>
+                    )}
+
+
                     <Grid item>
                       <Button
                         variant="contained"

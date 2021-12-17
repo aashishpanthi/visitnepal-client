@@ -8,7 +8,7 @@ import CloseIcon from '@material-ui/icons/Close';
 
   return (
       <nav>
-        <h1 className="logo">VisitNepal</h1>
+        <Link to="/" className="logo">VisitNepal</Link>
         <div className={`list ${active ? "active": ""}`}>
         <Link to="/" exact className="link">Home</Link>
         <Link to="/destinations" className="link">Destinations</Link>

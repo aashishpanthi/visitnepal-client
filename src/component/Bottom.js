@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Insta from "../images/insta.png";
-import Fb from "../images/FB.png";
-import Yt from "../images/yt.png";
 import "./styles/bottom.css";
 import YouTubeIcon from "@material-ui/icons/YouTube";
 import FacebookIcon from "@material-ui/icons/Facebook";

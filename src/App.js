@@ -8,6 +8,7 @@ import Blog from "./component/Blog.js";
 import "./component/styles/navbar.css";
 import Login from "./pages/Login";
 import "./App.css";
+import NotFound from "./pages/NotFound.js";
 
 function App() {
   return (
@@ -15,12 +16,13 @@ function App() {
       <BrowserRouter>
         <Switch>
           <Route path="/" component={Home} exact></Route>
-          <Route path="/destinations" component={Destinations}></Route>
-          <Route path="/accomodation" component={Accomodation}></Route>
-          <Route path="/experiences" component={Experience}></Route>
-          <Route path="/blog" component={Blog}></Route>
-          <Route path="/login" component={Login}></Route>
-          <Route path="/place/lumbini" component={Place}></Route>
+          <Route path="/destinations" component={Destinations} exact></Route>
+          <Route path="/accomodation" component={Accomodation} exact></Route>
+          <Route path="/experiences" component={Experience} exact></Route>
+          <Route path="/blog" component={Blog} exact></Route>
+          <Route path="/login" component={Login} exact></Route>
+          <Route path="/place/:name" component={Place}></Route>
+          <Route component={NotFound} />
         </Switch>
       </BrowserRouter>
     </div>

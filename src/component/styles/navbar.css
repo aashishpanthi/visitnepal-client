@@ -17,6 +17,28 @@ nav {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
   color: var(--primary);
+  text-decoration: none;
+  position: relative;
+}
+
+.logo::before{
+  content: "";
+  position: absolute;
+  bottom:2px;
+  left:0;
+  width:68%;
+  height:3px;
+  background-color: var(--primary);
+}
+
+.logo::after{
+  content: "";
+  position: absolute;
+  bottom:2px;
+  right:-5px;
+  width:26%;
+  height:3px;
+  background-color: var(--primary);
 }
 
 .link {

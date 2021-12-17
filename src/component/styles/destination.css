@@ -34,6 +34,8 @@ section.destination h1{
     width: 300px;
     box-shadow: -1px -2px 1px #706c6c73, 3px 3px 7px rgba(80, 82, 87, 0.288);
     background-color: var(--primary);
+    text-decoration: none;
+    color: inherit;
 }
 
 .destination-box:nth-child(3){

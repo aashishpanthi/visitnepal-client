@@ -12,7 +12,7 @@ export default function Destinations() {
     <section className="destination">
       <h1>Unforgatable places</h1>
       <div className="destination-container">
-        <div className="destination-box" data-aos="zoom-in">
+        <Link to="/place/lumbini" className="destination-box" data-aos="zoom-in">
           <div className="img-container">
             <img src={Lumbini} alt="lumbini" className="info-img"></img>
           </div>
@@ -22,8 +22,9 @@ export default function Destinations() {
             spiritual sites and attracts Buddhist pilgrims from around the
             world. Walk in the footsteps.
           </p>
-        </div>
-        <div className="destination-box" data-aos="zoom-in">
+        </Link>
+
+        <Link to="/place/lumbini" className="destination-box" data-aos="zoom-in">
           <div className="img-container">
             <img src={Kathmandu} alt="kathmandu" className="info-img"></img>
           </div>
@@ -33,8 +34,9 @@ export default function Destinations() {
             rich mix of the east and west, the old and the new, where tradition
             jostles with modernity ...
           </p>
-        </div>
-        <div className="destination-box" data-aos="zoom-in">
+        </Link>
+
+        <Link to="/place/lumbini" className="destination-box" data-aos="zoom-in">
           <div className="img-container">
             <img src={Pokhara} alt="pokhara" className="info-img"></img>
           </div>
@@ -44,7 +46,7 @@ export default function Destinations() {
             Circuit, a popular trail in the Himalayas. Pokhara is also famous
             for boating, trekking...
           </p>
-        </div>
+        </Link>
       </div>
         <Link to="/destinations" className="more-places-btn">See more places <i class="fa fa-arrow-right" aria-hidden="true"></i></Link>
     </section>

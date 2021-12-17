@@ -117,3 +117,20 @@
   margin: 1rem 0;
   font-size: 1.2rem;
 }
+
+.place .loader{
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+}
+
+.place .error{
+  color: red;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  text-align: center;
+}
